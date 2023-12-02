@@ -56,7 +56,7 @@ btnGerarNFE.addEventListener('click', () => {
       icms: valorICMS,
       iss: valorISS,
       outras: {
-        // Adicione as variáveis aqui
+       
       }
     }
   };
