@@ -1,0 +1,87 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Emissão de Nota Fiscal de Serviço</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Emissão de Nota Fiscal de Serviço</h1>
+
+  <form id="form-nfe">
+    <div class="form-group">
+      <label for="cnpj-prestador">CNPJ do Prestador</label>
+      <input type="text" class="form-control" id="cnpj-prestador" placeholder="00.000.000/0001-90">
+    </div>
+
+    <div class="form-group">
+      <label for="inscricao-estadual-prestador">Inscrição Estadual do Prestador</label>
+      <input type="text" class="form-control" id="inscricao-estadual-prestador" placeholder="00.000.000-00">
+    </div>
+
+    <div class="form-group">
+      <label for="nome-prestador">Nome do Prestador</label>
+      <input type="text" class="form-control" id="nome-prestador" placeholder="Nome do Prestador">
+    </div>
+
+    <div class="form-group">
+      <label for="endereco-prestador">Endereço do Prestador</label>
+      <input type="text" class="form-control" id="endereco-prestador" placeholder="Endereço do Prestador">
+    </div>
+
+    <div class="form-group">
+      <label for="cnpj-tomador">CNPJ do Tomador</label>
+      <input type="text" class="form-control" id="cnpj-tomador" placeholder="00.000.000/0001-90">
+    </div>
+
+    <div class="form-group">
+      <label for="inscricao-estadual-tomador">Inscrição Estadual do Tomador</label>
+      <input type="text" class="form-control" id="inscricao-estadual-tomador" placeholder="00.000.000-00">
+    </div>
+
+    <div class="form-group">
+      <label for="nome-tomador">Nome do Tomador</label>
+      <input type="text" class="form-control" id="nome-tomador" placeholder="Nome do Tomador">
+    </div>
+
+    <div class="form-group">
+      <label for="endereco-tomador">Endereço do Tomador</label>
+      <input type="text" class="form-control" id="endereco-tomador" placeholder="Endereço do Tomador">
+    </div>
+
+    <div class="form-group">
+      <label for="data-emissao">Data de Emissão</label>
+      <input type="date" class="form-control" id="data-emissao">
+    </div>
+
+    <div class="form-group">
+      <label for="codigo-servico">Código do Serviço</label>
+      <input type="text" class="form-control" id="codigo-servico" placeholder="000000">
+    </div>
+
+    <div class="form-group">
+      <label for="descricao-servico">Descrição do Serviço</label>
+      <input type="text" class="form-control" id="descricao-servico" placeholder="Descrição do Serviço">
+    </div>
+
+    <div class="form-group">
+      <label for="quantidade">Quantidade</label>
+      <input type="number" class="form-control" id="quantidade">
+    </div>
+
+    <div class="form-group">
+      <label for="valor-unitario">Valor Unitário</label>
+      <input type="number" class="form-control" id="valor-unitario">
+    </div>
+
+   
+  </form>
+ <button type="button" class="btn btn-primary" id="btn-gerar-nfe">Gerar NFe</button>
+
+  <div id="resultado-nfe"></div>
+
+  <script src="dados.js"></script>
+  <script src="gerador-nfe.js"></script>
+
+
+  
+</body>
